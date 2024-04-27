@@ -131,7 +131,7 @@ let data = [
 		price: 123.99
 	},
 	{
-		img: "DonaldDuck2.jpg",
+		img: "teenToys1.jpg",
 		h4: "Catan",
 		desc: "Description of the product goes here. It can be as long as needed to convey necessary information.",
 		price: 78.99
