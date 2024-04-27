@@ -1,0 +1,352 @@
+/* CSS Document */
+
+.heroImg{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.22)), url("../img/hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	padding: 10% 0;
+	margin-bottom: 20px;
+	position: relative;
+	color: #fff;
+	height: 255px;
+	width: 100%;
+}
+
+.heroImg h1{
+	position: absolute;
+	font-size: 10vh;
+	margin-top: 20px;	
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-shadow: 0px 0px 5px #CACC5D;
+	font-weight: bold;
+	font-family: "Great Vibes", cursive;	
+}
+
+/*  start header 3D title  quotes  */
+
+.quote{
+	font-weight: 500;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 4.4vh;
+	position:absolute;
+	top: 65%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	animation: fadeInOut 20s infinite;
+	color: gold;
+	animation-delay: 3s;
+	text-shadow: 1px 1px 2px gold;
+}
+
+@keyframes fadeInOut{
+	0%, 100%{
+		opacity: 0;
+	}
+	50%{
+		opacity:1;		
+	}
+}
+
+@media only screen and (max-width:780px){
+	.heroImg h1{
+		font-size: 8vw;
+	}
+	.quote{
+		font-size: 5vw;
+	}
+}
+
+/*  End header 3D title  quotes  */
+
+/* -- -weekly special style -- - */
+.badge {
+ background-image: radial-gradient(#FDEEBE 25%, #E8CFB4 35%, #FDEEBE 45%);
+  color: #E8CFB4;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+/* --- Start--  on sale slides  */
+.mySlides {
+	display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin: gray 2px solid;
+  border: 4px dashed #F0CC6C;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #0081C8;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  opacity: 1;
+}
+
+/* Caption text */
+.text {
+  color: #5D51DC;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* --- End --  on sale slides */
+
+aside{
+	padding: 2vw;
+	background-color: #F2DD68;
+	border-radius: 3px;
+	position: sticky;
+	top: 0;
+}
+
+main{
+	padding: 2vw;
+}
+
+.box-85 span{
+	text-align: right;
+	font-family: cursive;
+	font-size: 3.0em;
+	color: lightcoral;
+ 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/* --- Start --**Cards display */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px; 
+}
+
+.product-card {
+  width: 100%;
+  height: auto;
+  background-color: #D3EBF0;
+  border: 2px solid #53A3B4;
+  margin: 0px auto;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card>img:hover{
+	box-shadow: 0px 0px 20px #0176A2;
+	transform: scale(1.05);
+}
+
+.product-card h3, p { 
+	color:#026D8E;
+}
+
+.product-card p {
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+}
+
+.product-card a {
+  text-decoration: none;
+  color:#549FBE;
+  font-weight: bold;
+}
+
+.product-card .price {
+  font-size: 1.2vw;
+  color: #ff6347;
+}
+
+.product-card .card-btn{
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: white;
+  background-color: #67A2B9;
+  text-align: center;
+  cursor: pointer;
+  width: 38%;
+  font-size: 0.87vw;
+  border-radius: 10px;
+  border-right: 1px solid #AAC4DE;
+}
+
+.card-btn:hover {
+  opacity: 0.7;
+}
+
+.container em{
+	margin:0 7px;
+	color: #469CE0;
+}
+
+@media only screen and (max-width:768px){
+	aside{
+		padding: 1vw;
+	}
+	.btn{
+		padding:0.48 0.5%;
+		font-size: 1.4vw;
+	}
+	.product-card h3{
+		font-size: 3vw;		
+	}
+	.product-card p{
+		font-size: 2.2vw;		
+	}
+	.product-card .price{
+		font-size: 3.5vw;		
+	}
+	.product-card .card-btn{
+		font-size: 2.2vw;		
+	}
+}
+
+
+/*  END **-- Cards display*/
+
+/*-- Start ** filter elements  sidebar */
+
+
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+
+
+
+/*-- END ** filter elements  sidebar */
+
+/*  --  start --pagination -- */
+ul.pagination {
+    display:block;
+	position:relative;
+	padding:0;
+    margin: 20px auto;
+	text-align: center;
+}
+
+ul.pagination li {
+	display: inline;
+}
+
+ul.pagination li a {
+    color: #026D8E;
+    float: left;
+	margin:0 auto;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #A1D5E5;
+    color: white;
+    border: 1px solid lightgray;
+}
+
+ul.pagination li a:hover:not(.active) {
+	background-color: #ddd;
+}
+
+
+/*  --  END --pagination -- */
+
+/*  --Start * -toggle thumb up / down ---  */
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+
+.fa-thumbs-up{
+	color:#268C91;
+}
+.fa-thumbs-down{
+	color:#F89C3A;
+}
+/*  --END * -toggle thumb up / down ---  */
+
+
+

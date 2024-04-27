@@ -1,0 +1,321 @@
+/* CSS Document */
+*{
+	padding: 0;
+	border:0;
+}
+	.heroImg{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.22)), url("../img/hero.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+		padding: 100px 0;
+		margin-bottom: 20px;
+		position: relative;
+		color:#FFFFFF;
+		height: 400px;
+		width: 100%;
+	}
+
+	.heroImg h1{
+		font-size: 4.5em;
+		margin-top: 10px;	
+		text-shadow: 0px 0px 5px #fff;
+}
+
+
+@media only screen and (max-width:780px){
+	.heroImg h1{
+		font-size: 8vw;
+	}
+	#quest-Mk{
+		font-size: 8vw;
+	}
+	table{
+		font-size: 2.2vw;
+	}
+}
+
+#quest-Mk{
+	
+  position: absolute;
+ 
+  left: 50%;
+	transform: translate(-50%, -50%);
+  animation: moveAndRotate 5s infinite alternate;
+}
+
+@keyframes moveAndRotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(30deg);
+  }
+	 50% {
+    transform: translate(-50%, -50%) rotate(-25deg);
+  }
+	 75% {
+    transform: translate(-50%, -50%) rotate(25deg);
+  }
+}
+	/*-- start -- Sidebar -- */
+	#mySidenav a {
+	  position: absolute;
+	  left: -20px;
+	  transition: 0.3s;
+	  padding: 15px;
+	  width: 180px;
+	  text-decoration: none;
+	  font-size: 16px;
+		font-weight: 500;
+	  color: #0144E9;
+	  border-radius: 0 5px 5px 0;
+		font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	}
+
+	#mySidenav a:hover {
+	  left: 0;
+	}
+
+	#Orders {
+	  top: 20px;
+	  background-color: #D394F3;
+	}
+
+	#Shipping {
+	  top: 80px;
+	  background-color: #85CFF5;
+	}
+
+	#Returns {
+	  top: 140px;
+	  background-color: #9DFCC7;
+	}
+
+	#Common {
+	  top: 200px;
+	  background-color:#E7D7B3;
+	}
+
+
+	#Stores {
+	  top: 260px;
+	  background-color:#D2F1AB;
+	}
+
+
+	#Pricing {
+	  top: 320px;
+	  background-color: #E2E8A9;
+	}
+
+/*-- END -- Sidebar -- */
+
+	/*-- Start --  check orders statu*/
+.help-contain{
+	margin:25px;
+}
+
+	.column-left {
+		float: left;
+		width: 23%;
+		margin:0 20px;
+	}
+
+	.column-form {
+		 float: left;
+		 width: 60%;
+		 margin: 0 20px;
+		 background-color: #E4F3F2;
+	}
+
+	.orderStatu-row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	@media screen and (max-width: 600px) {
+	  .column-left, .column-form {
+		width: 100%;
+	  }
+	}
+.id-logo-container{
+	display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0.9375rem;
+}
+
+.part-1, 
+.part-2{
+	text-align: center;
+ 	text-transform: capitalize;
+	margin-top: 10px;
+	padding:8px;
+}
+
+.orderStatus-SignIn{
+	background-color: #0049FD;
+	color:#FFFFFF;
+	padding:20px;
+}
+
+.part-1 span,
+.part-2 span {
+	margin:10px 10px;
+}
+.btn-contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.sign-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005AD2;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sign-btn:hover {
+    background-color: #0049FD;
+	color:greenyellow;
+}
+/*-- END --  check orders statu*/
+
+
+.column-form p,
+.column-form h3{
+	margin: 10px 15px; 
+}
+
+
+/*--start--  user info input*/
+
+input[type=number],input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=number]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/* Extra styles for the cancel button */
+#sendEmail-btn {
+  padding: 14px 20px;
+  background-color: #17A9BA;
+  float: left;
+  width: 50%;
+  border-radius: 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+#sendEmail-btn:hover{
+ 	background-color: #4FC3BD;
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#sendEmail-btn:active{
+	background-color: #237BCC;
+  	box-shadow: 3px 2px 5px #666;
+  	transform: translateY(4px);
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+/*--END--  user info input*/
+
+
+/*  Start---  shiping and return --*/
+
+
+/* -- -pricing  table  --  -- */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #F4F7E4;
+  color:#025566;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/*  END---  shiping and return --*/ 
+
+/* --Start - *prograssive bar -** on help page -- -*/
+.progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  background-color: transparent; 
+  z-index: 9999; 
+  display: none; 
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0; 
+  background-color: #F2C157; 
+}
+
+/* --END - *prograssive bar -** on help page -- -*/
+
+
+
+

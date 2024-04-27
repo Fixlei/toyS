@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Toy's Help</title>
+	
+</head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/help.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!---  Using: How To Create a Hoverable Sidenav -W3	-->
+	
+<body>
+	<nav>
+		<div class="logo shaking">
+			<img src="img/toysLogo.png" alt="logoImg">
+		</div>
+
+		 <div class="search-container">
+			<form action="#">
+			  <input type="text" placeholder="Search.." name="search" required>
+			  <button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		  </div>
+		
+		<div>		
+			<ul>
+				<li>
+				<a href="index.html">Products</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="login-register.html">Login</a>
+				</li>
+				<li>
+					<a href="checkout.html">Checkout</a>
+				</li>
+				<li>
+					<a href="help.html">Help</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<header class="heroImg font-color">
+		<div id="mySidenav" class="sidenav">
+		  <a href="#orders-title" id="Orders">Orders</a>
+		  <a href="#ship-title" id="Shipping">Shipping&amp;Delivery</a>
+		  <a href="#return-title" id="Returns">Returns</a>
+		  <a href="#" id="Common">Common Questions</a>
+		  <a href="#" id="Stores">Stores</a>
+		  <a href="#price-title" id="Pricing">Pricing&amp;Promotion</a>
+		</div>
+
+		<h1>Help Center - Toy'S! </h1><span id="quest-Mk" style="font-size:100px; text-shadow: 5px 3px 8px #fff;">&#10067;</span>
+	</header>
+	
+<!-- **- progress-bar --**	-->
+		
+		<div class="progress-container">
+		  <div class="progress-bar" id="myBar"></div>
+		</div>
+	
+	<div class="sub-nav">	
+			<a href="index.html"><span>Home</span></a> &#10187;<a href="help.html"><span>Help</span></a>
+		</div>
+<div class="help-contain font-color">
+		<h2 id="orders-title" >Check Your Order Status</h2>
+	<hr class="hr-line">
+		<div class="orderStatu-row">
+		  <div class="column-left">
+			  <div class="id-logo-container">
+			<img id="id-logo" class="shaking" src="img/helpLogo.jpg" alt="help-logo">
+			</div>
+			<div class="orderStatus-SignIn">
+				<div class="part-1"><span><strong>sign in with your toy's account</strong></span></div>
+				<div class="part-2"><span>Sign in to see all your orders in one place and follow them to your door.</span></div>
+				</div>
+			  <div class="btn-contain">
+			  <a href="login-register.html" class="sign-btn">Sign In</a>
+				</div>	  
+		  </div>
+
+		  <div class="column-form">
+			<h3><strong>Don't have a Toy's Account?</strong></h3>
+			  <p>No problem! Just enter your order number (from your order confirmation email) and your email address, and we’ll send you a link to view your order status.</p>
+			  
+		 <form class="modal-content" action="#">
+			<div class="container">
+			  <h1>Guest Order Tracking</h1>
+			  <hr>
+			  <label for="orderNum"><b>Order Number</b></label>
+			  <input type="number" placeholder="100xxxxxxxxxxxx" name="orderNum" pattern="[0-3][0-3][0-3][0-9]{15}" maxlength="16" required>
+
+			  <label for="email"><b>Password</b></label>
+			  <input type="email" placeholder="Email address" name="email" pattern="/^[\w\.-]+@[a-zA-Z\d\.-]+\.[a-zA-Z]{2,}$/" required>
+
+			  <div class="clearfix">
+
+				<button id="sendEmail-btn" type="submit" class="signupbtn">Send Email</button>
+			  </div>
+			</div>
+  			</form>
+		  </div>
+		</div>
+	</div>
+	
+	<hr class="hr-line">
+	
+<!-- Start--	shiping and return-->
+
+     <div class="backg-format font-color" id="ship-title">
+		<h1>SHIPPING &amp; RETURN</h1>
+		<p><strong>About Your Shipment</strong>
+        <h2>Standard Shipping</h2>
+		<br>
+		• Takes 3-5 business days.
+			<br>
+		• Please expect your delivery to take an additional 3 business days for rural areas.
+			<br>
+		• Please allow 5 business days (Monday through Friday excluding holidays) for shipping to Alaska, Hawaii, Puerto Rico, Guam, Micronesia and the US Virgin Islands. Non-continental US territories and APO’s will be shipped via USPS and will not have order tracking available.
+			<br>
+		• Orders shipping to a P.O. Box will be delivered via US Postal Service.
+			<br>
+		• Free delivery will automatically apply to your online, telephone or Pick a Brick order.</p>
+		<p>For orders:</p>
+
+			<br>
+			• Up to $25.00, delivery is $4.95.
+			<br>
+			• From $25.01 to $35.00, delivery is $6.95.
+		<br>
+			*Qualifying purchases must be equal to or greater than the threshold value in merchandise only; any charges or value of gift cards purchased do not apply to the merchandise total.
+		<br>
+       • Items in stock ship the next business day (Monday through Friday excluding holidays) if placed by 12pm EST.
+      <br>
+		<h2>Express Shipping &amp; Express Saver</h2>	
+		<span>Details of our Express shipping costs are set out in the table at the end of this section.
+			<br>
+		• Express Shipping takes 1-2 business days (Monday through Friday excluding holidays).
+			<br>
+		• Express Saver takes 2-3 business days (Monday through Friday excluding holidays).
+			<br>
+		• Orders will ship via UPS.
+			<br>
+		• Saturday delivery is not available.
+			<br>
+		• We’re delighted to extend the option for express shipping to pre-ordered items. Pre-orders ship from the date they become available.
+			<br>
+		• Please note there is a surcharge of $12.50 for Express service to Alaska and Hawaii.	
+			</span>	
+	<br><br>
+	
+<table id="price-title">
+  <tr>
+    <th>Order Value</th>
+    <th>Express Saver*</th>
+    <th>Express*</th>
+  </tr>
+  <tr>
+    <td>$ 0.00 - $25.00</td>
+    <td>$ 14.95</td>
+    <td>$ 19.95</td>
+  </tr>
+  <tr>
+   <td>$ 25.01 - $35.00</td>
+    <td>$ 16.95</td>
+    <td>$ 21.95</td>
+  </tr>
+  <tr>
+    <td>$ 35.01 - $50.00</td>
+    <td>$ 22.95</td>
+    <td>$ 27.95</td>
+  </tr>
+	 <tr>
+    <td>$ 75.00 - $100.00</td>
+    <td>$ 24.95</td>
+    <td>$ 29.95</td>
+  </tr>
+	 <tr>
+    <td>$ 100.00 - $150.00</td>
+    <td>$ 27.95</td>
+    <td>$ 32.95</td>
+  </tr>
+</table>
+	<h2>Pre-orders and backorders</h2>
+	<br>
+• Backorder items are available to order but won’t ship until more arrive in our warehouse.
+	<br>
+• Pre-orders are sets that are coming soon! They’re not out yet, but you can still place your order.
+	<br>
+• Shipping dates for pre-order and backordered items are shown on the product page, in your bag, and in the order summary at checkout.
+	<br>
+• Items will ship as soon as they become available. We’ll email you to let you know when your order leaves our warehouse.
+	<br>
+• If you’ve ordered other items in addition to your pre-order or backordered item, the rest of the order will ship separately.
+	<br>
+• If you’ve qualified for any free or promotional items, they’ll ship with the next available items in your order.
+	<br>
+• It’s easy to find the latest updates on your order—simply check your order status here.
+	<br>
+<h2>Pick a Brick</h2>
+• Please allow 5 business days for shipping of Pick a Brick “Bestseller” and “Standard” parts. Sometimes Standard items can take up to 28 days to be delivered.
+	<br>
+• We charge a service fee for Pick a Brick orders. If your basket meets the minimum amount of $14 for each category, the service fee will be removed. The service fee for Bestseller items is $7. For Standard items, it’s $7.
+	<br>
+• Express deliveries are not available.
+	<br>
+• Pick A Brick orders always ship with price and billing details.
+	<br>
+<h2>Shipping Restrictions</h2>	
+Express and Express Saver are not available to P.O. boxes, APO and FPO addresses, Micronesia, the US Virgin Islands, Puerto Rico or other areas considered rural by the carrier. Express and Express Saver are not available for Toy'S® Gift Card orders, Toy'S Minifigure Factory and Toy'S Pick a Brick customized products. Gift cards arrive via USPS.
+<br>
+Please note: in order to protect our consumers and maintain our commitment to service excellence, we do not ship to Freight Forwarding Services.
+<br>
+<h2>Shipping &amp; Service Delays</h2>
+Shipment dates are estimates in accordance with our carriers. If you live in an area experiencing an unexpected service delay (i.e. severe weather, natural disasters, unscheduled events, etc.), please note there may be additional shipping time to receive your order.
+<br>
+	<h2>Gift Orders</h2>
+Order a gift for your children or friends and be sure that your secret is safe!
+<br>
+• Every order is shipped in a plain box, and you can specify the 'Ship To' address such as a relative's house or place of employment.
+	<br>
+• If you have requested delivery to an address different from your billing address, price/billing details will not be included since we assume that the delivery is a gift to the recipient.
+	<br>
+• Pricing information will be included in your shipping confirmation e-mail.
+Order cancellations
+	<br>
+You’ll be able to cancel your order until it reaches the ‘In Warehouse’ status. To find out where your order is in its journey you can check your account page.
+<br>
+If your order includes only pre-order or backorder items, you’ll be able to cancel up to 5 business days before the estimated delivery date. If you missed the cancellation window, you can return your item in exchange for a full refund.
+<br>
+<h2>Tracking Your Package</h2>
+If you have provided your email address we will send you a ship confirmation email when your order ships. For all orders (excluding orders shipped via USPS) this email will include a tracking number which you can use to track your package on the appropriate shipping carrier’s website.
+	<br>
+<h2 id="return-title">Return Policy</h2>
+We believe our Toy'S bricks and other products must live up to your highest expectations, and our service must live up to the quality of our toys. If for any reason you need to return your order, it’s easy and free! All returns or exchanges must be made within 90 days of receipt of your order. We’ll refund your order within 14 business days of receiving your return. To get a free return label on Toy'S.com, log into your account and go to your Order Status page. From there, click on “Return Items” and follow the instructions.
+<br>
+Unopened sets: Simply return your unopened Toy'S set in a secure and sturdy package to the address listed on your packing slip. If the total value of the unopened set is under $200, you can return your unopened Toy'S set to any of our Toy'S Brand Retail Stores with your original shipping confirmation email or receipt dated within 90 days, and we'll give you a full refund in form of store credit or a gift card. However, for orders purchased using PayPal, if you return an unopened set to the address listed on your packing slip, your refund will be provided in the form of a gift card, and if you return an unopened set that is under $200 to a Toy'S Brand Retail Store, your refund will be provided in the form of a store credit. In order to receive a refund to your PayPal account you must contact Customer Service.
+<br>
+Unopened sets that are not accompanied by a shipping confirmation email or receipt cannot be exchanged or returned to a Toy'S Brand Retail Store. You can set up a return on Toy'S.com or contact Customer Service so they can help you. Total value of returned items over $200 cannot be returned in the store. Clothing, apparel, and footwear cannot be returned in-store.
+<br>
+Opened Sets: Returns of opened Toy'S sets must include the original shipping confirmation email or receipt and can be returned for exchange or merchandise credit only. Please make sure you use a sturdy, secure package.
+</div>
+
+<!--END shipping and return		-->
+		
+<footer>
+		<div class="row font-color">
+		<div class="box-33">
+	
+			<h4>Call us Toys® Customer Service in English</h4>
+
+		<p>1-844-903-0000<br/>
+
+		Monday to Friday 8am - 10pm ET<br/>
+
+		Saturday to Sunday 10am - 6pm ET</p>
+		
+		</div>
+		
+		<div class="box-33">
+		<h4>Toy'S&#8482; Customer Service in Spanish</h4>
+
+		<p>1-833-692-0006<br/>
+
+		Monday to Friday 10am - 8pm ET</p>
+		</div>
+			<div class="box-33">
+	
+		<h4>Toy'S&reg; Education Tech Support</h4>
+
+		<p>1-866-349-5000<br/>
+
+		Monday to Friday 8am - 10pm ET<br/>
+
+		Our free number might be blocked by some providers. You may be charged when calling from a mobile phone. Please contact your provider for more details.</p>
+		</div>
+	</div>
+	<div class="font-color">
+			<h3>Toy'S&copy; All Rights Reserved.</h3> 
+		 </div>
+	</footer>
+	
+	<script defer src="script/help.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

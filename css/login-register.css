@@ -1,0 +1,63 @@
+/* CSS Document */
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+#email-ipt, #psw-ipt, #rpt-psw {
+  width: 100%;
+	padding: 15px;
+	margin:5px 0 22px 0;
+	display: inline-block;
+	border: none;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.cancelbtn, .signupbtn {
+	color:#056472;
+	font-size: 1.2vw;
+	font-weight: 600;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	margin: 0.8vw 0;
+	background-color: #A7E4F0;
+  	margin-left: 25px;
+}
+
+.cancelbtn,
+.signupbtn:hover {
+  opacity:1;
+}
+
+.signupbtn:hover {
+	background-color: #2396B1;
+	color:#A7E4F0;
+}
+
+.img-botton img{
+	display: block;
+	width: 88%;
+	margin:20px auto 20px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 1.6vw;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+ img, .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}

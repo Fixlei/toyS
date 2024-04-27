@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Toy Site</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav>
+		<div class="logo shaking">
+			<img src="img/toysLogo.png" alt="logoImg">
+		</div>
+		
+		 <div class="search-container">
+			<form action="#">
+			  <input type="text" placeholder="Search.." name="search" required>
+			  <button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		  </div>
+		<div>
+			<ul>
+				<li>
+				<a href="index.html">Products</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="login-register.html">Login</a>
+				</li>
+				<li>
+					<a href="checkout.html">Checkout</a>
+				</li>
+				<li>
+					<a href="help.html">Help</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+		<main>
+		<div class="sub-nav">	
+			<h2>Contact us</h2>
+			<a href="index.html"><span>Home</span></a> &#10187;<a href="contact.html"><span>Contact</span></a>
+		</div>
+			<hr class="hr-line">
+	<div class="container backg-format font-color">
+	  <form>
+		<label for="fname">Name</label>
+		<input type="text" id="fname" name="firstname" pattern="[A-Za-z]+" required placeholder="Your name(letters only ..)">
+
+		<label for="email">Email</label>
+		<input type="email" id="contact-email" name="email" placeholder="example@email.com" required>
+
+		<label for="subject">Message -- Tell us.. </label>
+		<textarea id="contact-subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<!--	pop up after click submit	-->
+		<div class="popup" onclick="myFunction()">
+		 <input class="btn" id="sbt-contact" type="submit" value="Submit">
+		 <span class="popuptext" id="myPopup">Thank you! submitted. </span>
+	</div>
+		  
+	  </form>
+	</div>
+	</main>
+		
+		
+<footer>
+		<div class="row font-color">
+		<div class="box-33">
+	
+			<h4>Call us Toys® Customer Service in English</h4>
+
+		<p>1-844-903-0000<br/>
+
+		Monday to Friday 8am - 10pm ET<br/>
+
+		Saturday to Sunday 10am - 6pm ET</p>
+		
+		</div>
+		
+		<div class="box-33">
+		<h4>Toy'S&#8482; Customer Service in Spanish</h4>
+
+		<p>1-833-692-0006<br/>
+
+		Monday to Friday 10am - 8pm ET</p>
+		</div>
+			<div class="box-33">
+	
+		<h4>Toy'S&reg; Education Tech Support</h4>
+
+		<p>1-866-349-5000<br/>
+
+		Monday to Friday 8am - 10pm ET<br/>
+
+		Our free number might be blocked by some providers. You may be charged when calling from a mobile phone. Please contact your provider for more details.</p>
+		</div>
+	</div>
+	<div class="font-color">
+			<h3>Toy'S&copy; All Rights Reserved.</h3> 
+		 </div>
+	</footer>
+	
+	<script defer src="script/contact.js"></script>
+</body>
+</html>

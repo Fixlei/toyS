@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Toy Site</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Jacquard+12+Charted&display=swap" rel="stylesheet">	
+</head>
+<body>
+	<nav>
+		<div class="logo shaking">
+			<img src="img/toysLogo.png" alt="logoImg">
+		</div>
+		
+		 <div class="search-container">
+			<form action="#">
+			  <input type="text" placeholder="Search.." name="search" required>
+			  <button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		  </div>
+		<div>		
+			<ul>
+				<li>
+				<a href="index.html">Products</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="login-register.html">Login</a>
+				</li>
+				<li>
+					<a href="checkout.html">Checkout</a>
+				</li>
+				<li>
+					<a href="help.html">Help</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<header class="heroImg">
+		<h1>Welcome to Toy'S!</h1>
+		<div id="quote" class="quote"></div>
+	</header>
+	
+<!--  -- asidebar down	-->
+		<div class="row box-shadow">
+			<aside class="box-15">
+				<h4>Category</h4>
+				
+	<!-- **  sidebar--filter elements ** -->
+				
+	<div id="myBtnContainer">
+		<ul>
+			<span><strong>Sort:</strong></span><br>
+		  <li><button class="btn active" id="reset"> Reset</button></li>
+			<br>
+		  <li><button class="btn" id="sortName">Alphabtl</button></li>
+			<br>
+		  <li><button class="btn" id="filterPrice"> By Price</button></li>
+		</ul>
+		</div>
+				<form action="">
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					
+				</form>
+
+				<h4>Brand</h4>
+				<form action="">
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					
+				</form>
+				<h4>Material</h4>
+				<form action="">
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					<fieldset>
+						<label for=>lorem</label>
+						<input type="radio">
+					</fieldset>
+					
+				</form>
+<!--	** user experience input form and rating prograssive bar --***--	-->
+			</aside>
+			
+		<main class="box-85">			
+			<!--	insert video as background voice		-->	
+		<video id="videoId" height="180px" width="80%" autoplay controls>
+			<source src="img/bigBuckBunnyTrailer.webm" type="video/mp4">
+			</video>
+
+			<hr class="hr-line">
+			
+			<h2>Lorem ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolorem beatae, <a href="index.html"><i>Toy's</i></a> labore quod. Fuga laborum, nam placeat. Eum hic, eligendi vitae quibusdam quis optio nisi, recusandae culpa nobis, adipisci officiis.</p>
+		<div class="weekly">
+		<span class="badge">Weekly Special!</span>
+			</div>
+			<!--			imgs for promotion	-->
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="img/onsale1.jpg" alt="sale" style="width:80%; height:310px;">
+			  <div class="text">This week, we've got fantastic deals for you! Carefully selected toys are now available at unbeatable prices. Don't miss out on this opportunity to find your favorite toys at discounted prices this week!</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="img/onsale2.jpg" alt="sale" style="width:80%;  height:310px;">
+			  <div class="text">This week, we've got fantastic deals for you! Carefully selected toys are now available at unbeatable prices. Don't miss out on this opportunity to find your favorite toys at discounted prices this week!</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="img/onsale3.jpg" alt="sale" style="width:80%;  height:310px;">
+			  <div class="text">This week, we've got fantastic deals for you! Carefully selected toys are now available at unbeatable prices. Don't miss out on this opportunity to find your favorite toys at discounted prices this week!"</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			<hr class="hr-line">
+			
+<!--  Start* --prodcts display -- Cards -->
+<div id="toyDisplay" class="container">
+			</div>
+<!-- ** END * --prodcts display -- Cards -->	
+			
+<!--	botton --pagination-- -- 		-->
+		<ul class="pagination">
+		  <li><a href="#">«</a></li>
+		  <li><a href="#">1</a></li>
+		  <li><a class="active" href="#">2</a></li>
+		  <li><a href="#">3</a></li>
+		  <li><a href="#">4</a></li>
+		  <li><a href="#">5</a></li>
+		  <li><a href="#">6</a></li>
+		  <li><a href="#">7</a></li>
+		  <li><a href="#">»</a></li>
+		</ul>
+	</main>
+	</div>
+		
+	
+<footer>
+		<div class="row font-color">
+		<div class="box-33">
+	
+			<h4>Call us Toys® Customer Service in English</h4>
+
+		<p>1-844-903-0000<br/>
+
+		Monday to Friday 8am - 10pm ET<br/>
+
+		Saturday to Sunday 10am - 6pm ET</p>
+		
+		</div>
+		
+		<div class="box-33">
+		<h4>Toy'S&#8482; Customer Service in Spanish</h4>
+
+		<p>1-833-692-0006<br/>
+
+		Monday to Friday 10am - 8pm ET</p>
+		</div>
+			<div class="box-33">
+		
+
+		<h4>Toy'S&reg; Education Tech Support</h4>
+
+		<p>1-866-349-5000<br/>
+
+		Monday to Friday 8am - 10pm ET<br/>
+
+		Our free number might be blocked by some providers. You may be charged when calling from a mobile phone. Please contact your provider for more details.</p>
+		</div>
+	</div>
+	<div class="font-color">
+			<h3>Toy'S&copy; All Rights Reserved.</h3> 
+		 </div>
+</footer>
+	
+	<script>
+		
+	var quotes=[
+	"\"The only true wisdom is in knowing you know nothing.\" — Socrates",
+ 	"\"The unexamined life is not worth living.\" — Socrates",
+  	"\"We are what we repeatedly do. Excellence, then, is not an act, but a habit.\" — Aristotle",
+  	"\"Happiness depends upon ourselves.\" — Aristotle",
+  	"\"Knowing yourself is the beginning of all wisdom.\" — Aristotle"
+	];
+	
+	var quoteElement = document.getElementById('quote');
+		
+		var index = 0;
+		var timer = setInterval(function(){
+			quoteElement.textContent = quotes[index];
+			index = (index + 1)% quotes.length;
+		}, 5000);
+		
+		quoteElement.textContent = quotes[index];
+			
+	
+		
+	//-- ** filter elements -- sidebar 
+		
+		filterSelection("all")
+		function filterSelection(c) {
+		  var x, i;
+		  x = document.getElementsByClassName("filterDiv");
+		  if (c == "all") c = "";
+		  for (i = 0; i < x.length; i++) {
+			w3RemoveClass(x[i], "show");
+			if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+		  }
+		}
+
+		function w3AddClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+		  }
+		}
+
+		function w3RemoveClass(element, name) {
+		  var i, arr1, arr2;
+		  arr1 = element.className.split(" ");
+		  arr2 = name.split(" ");
+		  for (i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i]) > -1) {
+			  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+			}
+		  }
+		  element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function(){
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		  });
+		}
+		
+	</script>
+	<script defer src="script/home.js"></script>
+</body>
+</html>
+
+
+
+
+
+
